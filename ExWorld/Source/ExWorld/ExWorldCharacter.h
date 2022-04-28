@@ -29,6 +29,14 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
+	float ShootCooldownTimer;
+
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
+
+
+
+
 protected:
 
 	/** Resets HMD orientation in VR. */
@@ -39,6 +47,8 @@ protected:
 
 	/** Called for side to side input */
 	void MoveRight(float Value);
+
+	
 
 	/** 
 	 * Called via input to turn at a given rate. 
@@ -69,4 +79,3 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 };
-

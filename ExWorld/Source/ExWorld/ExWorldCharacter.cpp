@@ -67,6 +67,7 @@ void AExWorldCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 	PlayerInputComponent->BindAxis("TurnRate", this, &AExWorldCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AExWorldCharacter::LookUpAtRate);
+	
 
 	// handle touch devices
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AExWorldCharacter::TouchStarted);
