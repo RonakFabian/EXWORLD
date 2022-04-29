@@ -30,11 +30,10 @@ USTRUCT(BlueprintType)
 struct FObjectTypeData : public FTableRowBase
 {
 	GENERATED_USTRUCT_BODY()
-	
 		
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FObjectType objectType;
 
-	
-	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TSoftObjectPtr<AActor> ActorRef;
 };

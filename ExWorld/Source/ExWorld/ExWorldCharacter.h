@@ -29,10 +29,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseLookUpRate;
 
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
-	float ShootCooldownTimer;
-
-	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
+	/*UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
+	float ShootCooldownTimer;*/
 
 
 
