@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Entity.h"
 #include "ExWorldCharacter.generated.h"
 
 UCLASS(config=Game)
@@ -32,7 +33,8 @@ public:
 	/*UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite, Category=Shooting)
 	float ShootCooldownTimer;*/
 
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FObjectType objectType;
 
 
 protected:

@@ -3,9 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-
 #include "Engine/DataTable.h"
-#include "UObject/NoExportTypes.h"
+#include "GameFramework/Actor.h"
 #include "StructAndEnum.generated.h"
 
 /**
@@ -21,9 +20,9 @@ UENUM(BlueprintType)
 enum class FObjectType: uint8
 {
 	NONE,
-	PAWN,
-	DESTRUCTIBLE,
-	WORLD_STATIC
+    PAWN,
+    DESTRUCTIBLE,
+    WORLD_STATIC
 };
 
 USTRUCT(BlueprintType)
